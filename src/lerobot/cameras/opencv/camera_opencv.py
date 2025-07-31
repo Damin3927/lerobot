@@ -420,7 +420,7 @@ class OpenCVCamera(Camera):
         self.thread = None
         self.stop_event = None
 
-    def async_read(self, timeout_ms: float = 200) -> np.ndarray:
+    def async_read(self, timeout_ms: float = 10000) -> np.ndarray:
         """
         Reads the latest available frame asynchronously.
 
